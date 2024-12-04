@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa SVG Estilo</title>
+  <style>
+.estructura {
+            stroke:black;
+            fill: white;
+            stroke-width: 2px;
+        }
+
+.tejado {
+            stroke-width: 14;
+            stroke:#d44c5c;
+            stroke-linecap: round;
+            fill: none;
+        }
+.puerta{
+
+            stroke-width: 2;
+            stroke: black;
+            stroke-linecap: round;
+            fill: #d44c5c;
+}
+.pomo{
+  stroke-width: 2;
+  stroke: black;
+  fill: white;
+}
+.ventana_arriba{
+  fill: #f7e07e;
+  stroke: black;
+      stroke-width: 2px;
+}
+.ventana_abajo{
+  fill: #f7e07e;
+  stroke: black;
+      stroke-width: 2px;
+}
+.borde_ventana{
+  fill: #d44c5c;
+  stroke: black;
+  stroke-width: 2px;
+}
+.escalones{
+  fill: gray;
+  stroke: black;
+  stroke-width: 2.5px;
+}
+  </style>
+</head>
+<body>
+
+<svg width="400" height="400" >
+
+  <polygon points="150,50 240,120 240,240 60,240 60,125" class="estructura"/>
+  <polyline points="40,130 150,40 265,130" class="tejado"/>
+  <rect x="80" y="160" width="35" height="70" class="puerta" />
+  <circle cx="92" cy="195" r="2" class="pomo" />
+  <circle cx="150" cy="100" r="20" class="ventana_arriba" /> 
+  <line x1="150" y1="80" x2="150" y2="120" stroke="black" stroke-width="2" />
+  <line x1="170" y1="100" x2="130" y2="100" stroke="black" stroke-width="2" />
+  <rect x="155" y="160" width="50" height="40" class="ventana_abajo" rx="5" ry="5" />
+  <line x1="205" y1="180" x2="155" y2="180" stroke="black" stroke-width="2" />
+  <line x1="180" y1="160" x2="180" y2="200" stroke="black" stroke-width="2" />
+  <rect x="150" y="200" width="60" height="5" rx="5" class="borde_ventana" />
+  <rect x="77" y="230" width="40" height="5"  class="escalones" />
+  <rect x="75" y="235" width="45" height="5"  class="escalones" />
+
+</svg>
+
+</body>
+</html>
